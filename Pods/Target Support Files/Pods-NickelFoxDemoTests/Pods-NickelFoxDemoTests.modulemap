@@ -1,0 +1,6 @@
+framework module Pods_NickelFoxDemoTests {
+  umbrella header "Pods-NickelFoxDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,1165 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39E7D6635DBEBF8D7D83DC44 /* Pods_NickelFoxDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3DC35D38EA2BF84724A109 /* Pods_NickelFoxDemoTests.framework */; };
+		56A955E221BA806200ED9E7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A955E121BA806200ED9E7C /* AppDelegate.swift */; };
+		56A955E421BA806200ED9E7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A955E321BA806200ED9E7C /* ViewController.swift */; };
+		56A955E721BA806200ED9E7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A955E521BA806200ED9E7C /* Main.storyboard */; };
+		56A955E921BA806300ED9E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A955E821BA806300ED9E7C /* Assets.xcassets */; };
+		56A955EC21BA806300ED9E7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A955EA21BA806300ED9E7C /* LaunchScreen.storyboard */; };
+		56A955F721BA806300ED9E7C /* NickelFoxDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A955F621BA806300ED9E7C /* NickelFoxDemoTests.swift */; };
+		56A9560221BA806400ED9E7C /* NickelFoxDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9560121BA806400ED9E7C /* NickelFoxDemoUITests.swift */; };
+		56A9561221BA811B00ED9E7C /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9561021BA811B00ED9E7C /* NetworkConfiguration.swift */; };
+		56A9561321BA811B00ED9E7C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9561121BA811B00ED9E7C /* SwiftyJSON.swift */; };
+		56A9562521BA820400ED9E7C /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A9561621BA820300ED9E7C /* SDWebImageDecoder.m */; };
+		56A9562621BA820400ED9E7C /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A9561721BA820300ED9E7C /* SDImageCache.m */; };
+		56A9562721BA820400ED9E7C /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A9561C21BA820300ED9E7C /* SDWebImageDownloaderOperation.m */; };
+		56A9562821BA820400ED9E7C /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A9561D21BA820300ED9E7C /* SDWebImageDownloader.m */; };
+		56A9562921BA820400ED9E7C /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A9562021BA820300ED9E7C /* SDWebImageCompat.m */; };
+		56A9562A21BA820400ED9E7C /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A9562121BA820300ED9E7C /* SDWebImageManager.m */; };
+		56A9562B21BA820400ED9E7C /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A9562221BA820300ED9E7C /* SDWebImagePrefetcher.m */; };
+		56A9562E21BA821B00ED9E7C /* MyLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A9562C21BA821B00ED9E7C /* MyLoader.m */; };
+		56A9563321BA833700ED9E7C /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A9563021BA833600ED9E7C /* UIImageView+WebCache.m */; };
+		56A9563421BA833700ED9E7C /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A9563221BA833600ED9E7C /* UIImageView+HighlightedWebCache.m */; };
+		56A9563721BA837C00ED9E7C /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A9563621BA837C00ED9E7C /* UIView+WebCacheOperation.m */; };
+		56A9564021BA83B100ED9E7C /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A9563A21BA83B000ED9E7C /* UIImage+MultiFormat.m */; };
+		56A9564121BA83B100ED9E7C /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A9563B21BA83B100ED9E7C /* UIImage+GIF.m */; };
+		56A9564221BA83B100ED9E7C /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A9563C21BA83B100ED9E7C /* UIImage+WebP.m */; };
+		56A9564321BA83B100ED9E7C /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A9563D21BA83B100ED9E7C /* UIButton+WebCache.m */; };
+		56A9564621BA83D600ED9E7C /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A9564421BA83D600ED9E7C /* NSData+ImageContentType.m */; };
+		56A9564821BA845C00ED9E7C /* AppUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9564721BA845C00ED9E7C /* AppUrls.swift */; };
+		56A9564D21BA862D00ED9E7C /* RSArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9564A21BA862D00ED9E7C /* RSArticle.swift */; };
+		56A9564E21BA862D00ED9E7C /* RSSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9564B21BA862D00ED9E7C /* RSSource.swift */; };
+		56A9564F21BA862D00ED9E7C /* RSArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9564C21BA862D00ED9E7C /* RSArticles.swift */; };
+		56A9565121BA86AD00ED9E7C /* CommonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9565021BA86AD00ED9E7C /* CommonObject.swift */; };
+		56A9565321BA87FF00ED9E7C /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9565221BA87FF00ED9E7C /* ArticleCell.swift */; };
+		56A9565621BA887300ED9E7C /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A9565521BA887300ED9E7C /* UIView+Toast.m */; };
+		56A9566321BA96EF00ED9E7C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A9566121BA96EF00ED9E7C /* Interface.storyboard */; };
+		56A9566521BA96F000ED9E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A9566421BA96F000ED9E7C /* Assets.xcassets */; };
+		56A9566C21BA96F000ED9E7C /* NickelFoxWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 56A9566B21BA96F000ED9E7C /* NickelFoxWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		56A9567321BA96F000ED9E7C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9567221BA96F000ED9E7C /* ExtensionDelegate.swift */; };
+		56A9567521BA96F000ED9E7C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9567421BA96F000ED9E7C /* NotificationController.swift */; };
+		56A9567721BA96F100ED9E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A9567621BA96F100ED9E7C /* Assets.xcassets */; };
+		56A9567C21BA96F100ED9E7C /* NickelFoxWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 56A9565F21BA96EF00ED9E7C /* NickelFoxWatch.app */; };
+		56A9568D21BA9FD000ED9E7C /* ArticleWatchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9568C21BA9FCF00ED9E7C /* ArticleWatchList.swift */; };
+		B537EED6865045A93BE05FBB /* Pods_NickelFoxDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02645EBC5A370A277D834548 /* Pods_NickelFoxDemoUITests.framework */; };
+		C11D64A87E64DA31AF262948 /* Pods_NickelFoxDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8B2021C716609B7A18723D /* Pods_NickelFoxDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56A955F321BA806300ED9E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56A955D621BA806200ED9E7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56A955DD21BA806200ED9E7C;
+			remoteInfo = NickelFoxDemo;
+		};
+		56A955FE21BA806400ED9E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56A955D621BA806200ED9E7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56A955DD21BA806200ED9E7C;
+			remoteInfo = NickelFoxDemo;
+		};
+		56A9566D21BA96F000ED9E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56A955D621BA806200ED9E7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56A9566A21BA96F000ED9E7C;
+			remoteInfo = "NickelFoxWatch Extension";
+		};
+		56A9567A21BA96F100ED9E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56A955D621BA806200ED9E7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56A9565E21BA96EF00ED9E7C;
+			remoteInfo = NickelFoxWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		56A9568021BA96F100ED9E7C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				56A9566C21BA96F000ED9E7C /* NickelFoxWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A9568421BA96F100ED9E7C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				56A9567C21BA96F100ED9E7C /* NickelFoxWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02645EBC5A370A277D834548 /* Pods_NickelFoxDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NickelFoxDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B3DC35D38EA2BF84724A109 /* Pods_NickelFoxDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NickelFoxDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		340DAAA1F9BC7D9AE8017F90 /* Pods-NickelFoxDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NickelFoxDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NickelFoxDemoTests/Pods-NickelFoxDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D35DAE1DB5548900DA0F020 /* Pods-NickelFoxDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NickelFoxDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NickelFoxDemoUITests/Pods-NickelFoxDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		56A955DE21BA806200ED9E7C /* NickelFoxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NickelFoxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A955E121BA806200ED9E7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		56A955E321BA806200ED9E7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56A955E621BA806200ED9E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56A955E821BA806300ED9E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56A955EB21BA806300ED9E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		56A955ED21BA806300ED9E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A955F221BA806300ED9E7C /* NickelFoxDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NickelFoxDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A955F621BA806300ED9E7C /* NickelFoxDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickelFoxDemoTests.swift; sourceTree = "<group>"; };
+		56A955F821BA806400ED9E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A955FD21BA806400ED9E7C /* NickelFoxDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NickelFoxDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A9560121BA806400ED9E7C /* NickelFoxDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickelFoxDemoUITests.swift; sourceTree = "<group>"; };
+		56A9560321BA806400ED9E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A9561021BA811B00ED9E7C /* NetworkConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
+		56A9561121BA811B00ED9E7C /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		56A9561521BA820100ED9E7C /* NickelFoxDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NickelFoxDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		56A9561621BA820300ED9E7C /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		56A9561721BA820300ED9E7C /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		56A9561821BA820300ED9E7C /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		56A9561921BA820300ED9E7C /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		56A9561A21BA820300ED9E7C /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		56A9561B21BA820300ED9E7C /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		56A9561C21BA820300ED9E7C /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		56A9561D21BA820300ED9E7C /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		56A9561E21BA820300ED9E7C /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
+		56A9561F21BA820300ED9E7C /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		56A9562021BA820300ED9E7C /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
+		56A9562121BA820300ED9E7C /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		56A9562221BA820300ED9E7C /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		56A9562321BA820300ED9E7C /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		56A9562421BA820400ED9E7C /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		56A9562C21BA821B00ED9E7C /* MyLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLoader.m; sourceTree = "<group>"; };
+		56A9562D21BA821B00ED9E7C /* MyLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLoader.h; sourceTree = "<group>"; };
+		56A9562F21BA833600ED9E7C /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		56A9563021BA833600ED9E7C /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		56A9563121BA833600ED9E7C /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		56A9563221BA833600ED9E7C /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		56A9563521BA837C00ED9E7C /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		56A9563621BA837C00ED9E7C /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		56A9563821BA83B000ED9E7C /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		56A9563921BA83B000ED9E7C /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		56A9563A21BA83B000ED9E7C /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		56A9563B21BA83B100ED9E7C /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		56A9563C21BA83B100ED9E7C /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		56A9563D21BA83B100ED9E7C /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		56A9563E21BA83B100ED9E7C /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		56A9563F21BA83B100ED9E7C /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		56A9564421BA83D600ED9E7C /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		56A9564521BA83D600ED9E7C /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		56A9564721BA845C00ED9E7C /* AppUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUrls.swift; sourceTree = "<group>"; };
+		56A9564A21BA862D00ED9E7C /* RSArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSArticle.swift; sourceTree = "<group>"; };
+		56A9564B21BA862D00ED9E7C /* RSSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSource.swift; sourceTree = "<group>"; };
+		56A9564C21BA862D00ED9E7C /* RSArticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSArticles.swift; sourceTree = "<group>"; };
+		56A9565021BA86AD00ED9E7C /* CommonObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonObject.swift; sourceTree = "<group>"; };
+		56A9565221BA87FF00ED9E7C /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		56A9565421BA887300ED9E7C /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		56A9565521BA887300ED9E7C /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		56A9565F21BA96EF00ED9E7C /* NickelFoxWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NickelFoxWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A9566221BA96EF00ED9E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		56A9566421BA96F000ED9E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56A9566621BA96F000ED9E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A9566B21BA96F000ED9E7C /* NickelFoxWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NickelFoxWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A9567221BA96F000ED9E7C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		56A9567421BA96F000ED9E7C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		56A9567621BA96F100ED9E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56A9567821BA96F100ED9E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A9567921BA96F100ED9E7C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		56A9568C21BA9FCF00ED9E7C /* ArticleWatchList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleWatchList.swift; sourceTree = "<group>"; };
+		70225F03533B5E3B3196E4A1 /* Pods-NickelFoxDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NickelFoxDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NickelFoxDemo/Pods-NickelFoxDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8B725E19939CD5A8A4E25AB0 /* Pods-NickelFoxDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NickelFoxDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NickelFoxDemo/Pods-NickelFoxDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		AA8B2021C716609B7A18723D /* Pods_NickelFoxDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NickelFoxDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1537865A6D5F7A13148B771 /* Pods-NickelFoxDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NickelFoxDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NickelFoxDemoTests/Pods-NickelFoxDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9B2D5587D831D581C6AC1BE /* Pods-NickelFoxDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NickelFoxDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NickelFoxDemoUITests/Pods-NickelFoxDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56A955DB21BA806200ED9E7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11D64A87E64DA31AF262948 /* Pods_NickelFoxDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A955EF21BA806300ED9E7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E7D6635DBEBF8D7D83DC44 /* Pods_NickelFoxDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A955FA21BA806400ED9E7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B537EED6865045A93BE05FBB /* Pods_NickelFoxDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A9566821BA96F000ED9E7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		369F9CDB01A0397C72BF7CDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B725E19939CD5A8A4E25AB0 /* Pods-NickelFoxDemo.debug.xcconfig */,
+				70225F03533B5E3B3196E4A1 /* Pods-NickelFoxDemo.release.xcconfig */,
+				C1537865A6D5F7A13148B771 /* Pods-NickelFoxDemoTests.debug.xcconfig */,
+				340DAAA1F9BC7D9AE8017F90 /* Pods-NickelFoxDemoTests.release.xcconfig */,
+				E9B2D5587D831D581C6AC1BE /* Pods-NickelFoxDemoUITests.debug.xcconfig */,
+				3D35DAE1DB5548900DA0F020 /* Pods-NickelFoxDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		56A955D521BA806200ED9E7C = {
+			isa = PBXGroup;
+			children = (
+				56A955E021BA806200ED9E7C /* NickelFoxDemo */,
+				56A955F521BA806300ED9E7C /* NickelFoxDemoTests */,
+				56A9560021BA806400ED9E7C /* NickelFoxDemoUITests */,
+				56A9566021BA96EF00ED9E7C /* NickelFoxWatch */,
+				56A9566F21BA96F000ED9E7C /* NickelFoxWatch Extension */,
+				56A955DF21BA806200ED9E7C /* Products */,
+				369F9CDB01A0397C72BF7CDD /* Pods */,
+				F8E8EB53722E75E6FD7BDD00 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		56A955DF21BA806200ED9E7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56A955DE21BA806200ED9E7C /* NickelFoxDemo.app */,
+				56A955F221BA806300ED9E7C /* NickelFoxDemoTests.xctest */,
+				56A955FD21BA806400ED9E7C /* NickelFoxDemoUITests.xctest */,
+				56A9565F21BA96EF00ED9E7C /* NickelFoxWatch.app */,
+				56A9566B21BA96F000ED9E7C /* NickelFoxWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56A955E021BA806200ED9E7C /* NickelFoxDemo */ = {
+			isa = PBXGroup;
+			children = (
+				56A9561421BA81E000ED9E7C /* External Libraries */,
+				56A9560F21BA80F600ED9E7C /* Network */,
+				56A9564921BA861300ED9E7C /* Model */,
+				56A955E121BA806200ED9E7C /* AppDelegate.swift */,
+				56A955E321BA806200ED9E7C /* ViewController.swift */,
+				56A9565221BA87FF00ED9E7C /* ArticleCell.swift */,
+				56A955E521BA806200ED9E7C /* Main.storyboard */,
+				56A955E821BA806300ED9E7C /* Assets.xcassets */,
+				56A955EA21BA806300ED9E7C /* LaunchScreen.storyboard */,
+				56A955ED21BA806300ED9E7C /* Info.plist */,
+			);
+			path = NickelFoxDemo;
+			sourceTree = "<group>";
+		};
+		56A955F521BA806300ED9E7C /* NickelFoxDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				56A955F621BA806300ED9E7C /* NickelFoxDemoTests.swift */,
+				56A955F821BA806400ED9E7C /* Info.plist */,
+			);
+			path = NickelFoxDemoTests;
+			sourceTree = "<group>";
+		};
+		56A9560021BA806400ED9E7C /* NickelFoxDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				56A9560121BA806400ED9E7C /* NickelFoxDemoUITests.swift */,
+				56A9560321BA806400ED9E7C /* Info.plist */,
+			);
+			path = NickelFoxDemoUITests;
+			sourceTree = "<group>";
+		};
+		56A9560F21BA80F600ED9E7C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				56A9565021BA86AD00ED9E7C /* CommonObject.swift */,
+				56A9561021BA811B00ED9E7C /* NetworkConfiguration.swift */,
+				56A9564721BA845C00ED9E7C /* AppUrls.swift */,
+				56A9561121BA811B00ED9E7C /* SwiftyJSON.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		56A9561421BA81E000ED9E7C /* External Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				56A9565421BA887300ED9E7C /* UIView+Toast.h */,
+				56A9565521BA887300ED9E7C /* UIView+Toast.m */,
+				56A9562D21BA821B00ED9E7C /* MyLoader.h */,
+				56A9562C21BA821B00ED9E7C /* MyLoader.m */,
+				56A9564521BA83D600ED9E7C /* NSData+ImageContentType.h */,
+				56A9564421BA83D600ED9E7C /* NSData+ImageContentType.m */,
+				56A9562321BA820300ED9E7C /* SDImageCache.h */,
+				56A9561721BA820300ED9E7C /* SDImageCache.m */,
+				56A9561B21BA820300ED9E7C /* SDWebImageCompat.h */,
+				56A9562021BA820300ED9E7C /* SDWebImageCompat.m */,
+				56A9561A21BA820300ED9E7C /* SDWebImageDecoder.h */,
+				56A9561621BA820300ED9E7C /* SDWebImageDecoder.m */,
+				56A9561921BA820300ED9E7C /* SDWebImageDownloader.h */,
+				56A9561D21BA820300ED9E7C /* SDWebImageDownloader.m */,
+				56A9562421BA820400ED9E7C /* SDWebImageDownloaderOperation.h */,
+				56A9561C21BA820300ED9E7C /* SDWebImageDownloaderOperation.m */,
+				56A9561821BA820300ED9E7C /* SDWebImageManager.h */,
+				56A9562121BA820300ED9E7C /* SDWebImageManager.m */,
+				56A9561E21BA820300ED9E7C /* SDWebImageOperation.h */,
+				56A9561F21BA820300ED9E7C /* SDWebImagePrefetcher.h */,
+				56A9562221BA820300ED9E7C /* SDWebImagePrefetcher.m */,
+				56A9563121BA833600ED9E7C /* UIImageView+HighlightedWebCache.h */,
+				56A9563221BA833600ED9E7C /* UIImageView+HighlightedWebCache.m */,
+				56A9562F21BA833600ED9E7C /* UIImageView+WebCache.h */,
+				56A9563021BA833600ED9E7C /* UIImageView+WebCache.m */,
+				56A9563521BA837C00ED9E7C /* UIView+WebCacheOperation.h */,
+				56A9563621BA837C00ED9E7C /* UIView+WebCacheOperation.m */,
+				56A9563921BA83B000ED9E7C /* UIButton+WebCache.h */,
+				56A9563D21BA83B100ED9E7C /* UIButton+WebCache.m */,
+				56A9563821BA83B000ED9E7C /* UIImage+GIF.h */,
+				56A9563B21BA83B100ED9E7C /* UIImage+GIF.m */,
+				56A9563F21BA83B100ED9E7C /* UIImage+MultiFormat.h */,
+				56A9563A21BA83B000ED9E7C /* UIImage+MultiFormat.m */,
+				56A9563E21BA83B100ED9E7C /* UIImage+WebP.h */,
+				56A9563C21BA83B100ED9E7C /* UIImage+WebP.m */,
+				56A9561521BA820100ED9E7C /* NickelFoxDemo-Bridging-Header.h */,
+			);
+			path = "External Libraries";
+			sourceTree = "<group>";
+		};
+		56A9564921BA861300ED9E7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56A9564A21BA862D00ED9E7C /* RSArticle.swift */,
+				56A9564C21BA862D00ED9E7C /* RSArticles.swift */,
+				56A9564B21BA862D00ED9E7C /* RSSource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		56A9566021BA96EF00ED9E7C /* NickelFoxWatch */ = {
+			isa = PBXGroup;
+			children = (
+				56A9566121BA96EF00ED9E7C /* Interface.storyboard */,
+				56A9566421BA96F000ED9E7C /* Assets.xcassets */,
+				56A9566621BA96F000ED9E7C /* Info.plist */,
+			);
+			path = NickelFoxWatch;
+			sourceTree = "<group>";
+		};
+		56A9566F21BA96F000ED9E7C /* NickelFoxWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				56A9568C21BA9FCF00ED9E7C /* ArticleWatchList.swift */,
+				56A9567221BA96F000ED9E7C /* ExtensionDelegate.swift */,
+				56A9567421BA96F000ED9E7C /* NotificationController.swift */,
+				56A9567621BA96F100ED9E7C /* Assets.xcassets */,
+				56A9567821BA96F100ED9E7C /* Info.plist */,
+				56A9567921BA96F100ED9E7C /* PushNotificationPayload.apns */,
+			);
+			path = "NickelFoxWatch Extension";
+			sourceTree = "<group>";
+		};
+		F8E8EB53722E75E6FD7BDD00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA8B2021C716609B7A18723D /* Pods_NickelFoxDemo.framework */,
+				0B3DC35D38EA2BF84724A109 /* Pods_NickelFoxDemoTests.framework */,
+				02645EBC5A370A277D834548 /* Pods_NickelFoxDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56A955DD21BA806200ED9E7C /* NickelFoxDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A9560621BA806400ED9E7C /* Build configuration list for PBXNativeTarget "NickelFoxDemo" */;
+			buildPhases = (
+				6E44170BFEEB342002F38DB7 /* [CP] Check Pods Manifest.lock */,
+				56A955DA21BA806200ED9E7C /* Sources */,
+				56A955DB21BA806200ED9E7C /* Frameworks */,
+				56A955DC21BA806200ED9E7C /* Resources */,
+				43B121FDF9532AA8755E2161 /* [CP] Embed Pods Frameworks */,
+				56A9568421BA96F100ED9E7C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56A9567B21BA96F100ED9E7C /* PBXTargetDependency */,
+			);
+			name = NickelFoxDemo;
+			productName = NickelFoxDemo;
+			productReference = 56A955DE21BA806200ED9E7C /* NickelFoxDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56A955F121BA806300ED9E7C /* NickelFoxDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A9560921BA806400ED9E7C /* Build configuration list for PBXNativeTarget "NickelFoxDemoTests" */;
+			buildPhases = (
+				9AD528E63668FD086125CEE5 /* [CP] Check Pods Manifest.lock */,
+				56A955EE21BA806300ED9E7C /* Sources */,
+				56A955EF21BA806300ED9E7C /* Frameworks */,
+				56A955F021BA806300ED9E7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56A955F421BA806300ED9E7C /* PBXTargetDependency */,
+			);
+			name = NickelFoxDemoTests;
+			productName = NickelFoxDemoTests;
+			productReference = 56A955F221BA806300ED9E7C /* NickelFoxDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		56A955FC21BA806400ED9E7C /* NickelFoxDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A9560C21BA806400ED9E7C /* Build configuration list for PBXNativeTarget "NickelFoxDemoUITests" */;
+			buildPhases = (
+				796D6DC9C1F440024D66671A /* [CP] Check Pods Manifest.lock */,
+				56A955F921BA806400ED9E7C /* Sources */,
+				56A955FA21BA806400ED9E7C /* Frameworks */,
+				56A955FB21BA806400ED9E7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56A955FF21BA806400ED9E7C /* PBXTargetDependency */,
+			);
+			name = NickelFoxDemoUITests;
+			productName = NickelFoxDemoUITests;
+			productReference = 56A955FD21BA806400ED9E7C /* NickelFoxDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		56A9565E21BA96EF00ED9E7C /* NickelFoxWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A9568121BA96F100ED9E7C /* Build configuration list for PBXNativeTarget "NickelFoxWatch" */;
+			buildPhases = (
+				56A9565D21BA96EF00ED9E7C /* Resources */,
+				56A9568021BA96F100ED9E7C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56A9566E21BA96F000ED9E7C /* PBXTargetDependency */,
+			);
+			name = NickelFoxWatch;
+			productName = NickelFoxWatch;
+			productReference = 56A9565F21BA96EF00ED9E7C /* NickelFoxWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		56A9566A21BA96F000ED9E7C /* NickelFoxWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A9567D21BA96F100ED9E7C /* Build configuration list for PBXNativeTarget "NickelFoxWatch Extension" */;
+			buildPhases = (
+				56A9566721BA96F000ED9E7C /* Sources */,
+				56A9566821BA96F000ED9E7C /* Frameworks */,
+				56A9566921BA96F000ED9E7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NickelFoxWatch Extension";
+			productName = "NickelFoxWatch Extension";
+			productReference = 56A9566B21BA96F000ED9E7C /* NickelFoxWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56A955D621BA806200ED9E7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ruchin Somal";
+				TargetAttributes = {
+					56A955DD21BA806200ED9E7C = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					56A955F121BA806300ED9E7C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 56A955DD21BA806200ED9E7C;
+					};
+					56A955FC21BA806400ED9E7C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 56A955DD21BA806200ED9E7C;
+					};
+					56A9565E21BA96EF00ED9E7C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					56A9566A21BA96F000ED9E7C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 56A955D921BA806200ED9E7C /* Build configuration list for PBXProject "NickelFoxDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56A955D521BA806200ED9E7C;
+			productRefGroup = 56A955DF21BA806200ED9E7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56A955DD21BA806200ED9E7C /* NickelFoxDemo */,
+				56A955F121BA806300ED9E7C /* NickelFoxDemoTests */,
+				56A955FC21BA806400ED9E7C /* NickelFoxDemoUITests */,
+				56A9565E21BA96EF00ED9E7C /* NickelFoxWatch */,
+				56A9566A21BA96F000ED9E7C /* NickelFoxWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56A955DC21BA806200ED9E7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A955EC21BA806300ED9E7C /* LaunchScreen.storyboard in Resources */,
+				56A955E921BA806300ED9E7C /* Assets.xcassets in Resources */,
+				56A955E721BA806200ED9E7C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A955F021BA806300ED9E7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A955FB21BA806400ED9E7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A9565D21BA96EF00ED9E7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A9566521BA96F000ED9E7C /* Assets.xcassets in Resources */,
+				56A9566321BA96EF00ED9E7C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A9566921BA96F000ED9E7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A9567721BA96F100ED9E7C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43B121FDF9532AA8755E2161 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NickelFoxDemo/Pods-NickelFoxDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NickelFoxDemo/Pods-NickelFoxDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E44170BFEEB342002F38DB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NickelFoxDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		796D6DC9C1F440024D66671A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NickelFoxDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AD528E63668FD086125CEE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NickelFoxDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56A955DA21BA806200ED9E7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A9565621BA887300ED9E7C /* UIView+Toast.m in Sources */,
+				56A9564021BA83B100ED9E7C /* UIImage+MultiFormat.m in Sources */,
+				56A9564221BA83B100ED9E7C /* UIImage+WebP.m in Sources */,
+				56A9562821BA820400ED9E7C /* SDWebImageDownloader.m in Sources */,
+				56A9563321BA833700ED9E7C /* UIImageView+WebCache.m in Sources */,
+				56A955E421BA806200ED9E7C /* ViewController.swift in Sources */,
+				56A9562621BA820400ED9E7C /* SDImageCache.m in Sources */,
+				56A955E221BA806200ED9E7C /* AppDelegate.swift in Sources */,
+				56A9564F21BA862D00ED9E7C /* RSArticles.swift in Sources */,
+				56A9562921BA820400ED9E7C /* SDWebImageCompat.m in Sources */,
+				56A9562521BA820400ED9E7C /* SDWebImageDecoder.m in Sources */,
+				56A9563721BA837C00ED9E7C /* UIView+WebCacheOperation.m in Sources */,
+				56A9564621BA83D600ED9E7C /* NSData+ImageContentType.m in Sources */,
+				56A9565121BA86AD00ED9E7C /* CommonObject.swift in Sources */,
+				56A9564E21BA862D00ED9E7C /* RSSource.swift in Sources */,
+				56A9564821BA845C00ED9E7C /* AppUrls.swift in Sources */,
+				56A9562721BA820400ED9E7C /* SDWebImageDownloaderOperation.m in Sources */,
+				56A9564D21BA862D00ED9E7C /* RSArticle.swift in Sources */,
+				56A9562A21BA820400ED9E7C /* SDWebImageManager.m in Sources */,
+				56A9564321BA83B100ED9E7C /* UIButton+WebCache.m in Sources */,
+				56A9562B21BA820400ED9E7C /* SDWebImagePrefetcher.m in Sources */,
+				56A9565321BA87FF00ED9E7C /* ArticleCell.swift in Sources */,
+				56A9561221BA811B00ED9E7C /* NetworkConfiguration.swift in Sources */,
+				56A9562E21BA821B00ED9E7C /* MyLoader.m in Sources */,
+				56A9563421BA833700ED9E7C /* UIImageView+HighlightedWebCache.m in Sources */,
+				56A9561321BA811B00ED9E7C /* SwiftyJSON.swift in Sources */,
+				56A9564121BA83B100ED9E7C /* UIImage+GIF.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A955EE21BA806300ED9E7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A955F721BA806300ED9E7C /* NickelFoxDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A955F921BA806400ED9E7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A9560221BA806400ED9E7C /* NickelFoxDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A9566721BA96F000ED9E7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A9568D21BA9FD000ED9E7C /* ArticleWatchList.swift in Sources */,
+				56A9567521BA96F000ED9E7C /* NotificationController.swift in Sources */,
+				56A9567321BA96F000ED9E7C /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56A955F421BA806300ED9E7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56A955DD21BA806200ED9E7C /* NickelFoxDemo */;
+			targetProxy = 56A955F321BA806300ED9E7C /* PBXContainerItemProxy */;
+		};
+		56A955FF21BA806400ED9E7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56A955DD21BA806200ED9E7C /* NickelFoxDemo */;
+			targetProxy = 56A955FE21BA806400ED9E7C /* PBXContainerItemProxy */;
+		};
+		56A9566E21BA96F000ED9E7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56A9566A21BA96F000ED9E7C /* NickelFoxWatch Extension */;
+			targetProxy = 56A9566D21BA96F000ED9E7C /* PBXContainerItemProxy */;
+		};
+		56A9567B21BA96F100ED9E7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56A9565E21BA96EF00ED9E7C /* NickelFoxWatch */;
+			targetProxy = 56A9567A21BA96F100ED9E7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56A955E521BA806200ED9E7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56A955E621BA806200ED9E7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		56A955EA21BA806300ED9E7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56A955EB21BA806300ED9E7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		56A9566121BA96EF00ED9E7C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56A9566221BA96EF00ED9E7C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56A9560421BA806400ED9E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		56A9560521BA806400ED9E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56A9560721BA806400ED9E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B725E19939CD5A8A4E25AB0 /* Pods-NickelFoxDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4L36BDES35;
+				INFOPLIST_FILE = NickelFoxDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruchinsomal.NickelFoxDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NickelFoxDemo/External Libraries/NickelFoxDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56A9560821BA806400ED9E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70225F03533B5E3B3196E4A1 /* Pods-NickelFoxDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4L36BDES35;
+				INFOPLIST_FILE = NickelFoxDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruchinsomal.NickelFoxDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NickelFoxDemo/External Libraries/NickelFoxDemo-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		56A9560A21BA806400ED9E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1537865A6D5F7A13148B771 /* Pods-NickelFoxDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4L36BDES35;
+				INFOPLIST_FILE = NickelFoxDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruchinsomal.NickelFoxDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NickelFoxDemo.app/NickelFoxDemo";
+			};
+			name = Debug;
+		};
+		56A9560B21BA806400ED9E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 340DAAA1F9BC7D9AE8017F90 /* Pods-NickelFoxDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4L36BDES35;
+				INFOPLIST_FILE = NickelFoxDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruchinsomal.NickelFoxDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NickelFoxDemo.app/NickelFoxDemo";
+			};
+			name = Release;
+		};
+		56A9560D21BA806400ED9E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9B2D5587D831D581C6AC1BE /* Pods-NickelFoxDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4L36BDES35;
+				INFOPLIST_FILE = NickelFoxDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruchinsomal.NickelFoxDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NickelFoxDemo;
+			};
+			name = Debug;
+		};
+		56A9560E21BA806400ED9E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D35DAE1DB5548900DA0F020 /* Pods-NickelFoxDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4L36BDES35;
+				INFOPLIST_FILE = NickelFoxDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruchinsomal.NickelFoxDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NickelFoxDemo;
+			};
+			name = Release;
+		};
+		56A9567E21BA96F100ED9E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4L36BDES35;
+				INFOPLIST_FILE = "NickelFoxWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruchinsomal.NickelFoxDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		56A9567F21BA96F100ED9E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4L36BDES35;
+				INFOPLIST_FILE = "NickelFoxWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruchinsomal.NickelFoxDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		56A9568221BA96F100ED9E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4L36BDES35;
+				IBSC_MODULE = NickelFoxWatch_Extension;
+				INFOPLIST_FILE = NickelFoxWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruchinsomal.NickelFoxDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		56A9568321BA96F100ED9E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4L36BDES35;
+				IBSC_MODULE = NickelFoxWatch_Extension;
+				INFOPLIST_FILE = NickelFoxWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruchinsomal.NickelFoxDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56A955D921BA806200ED9E7C /* Build configuration list for PBXProject "NickelFoxDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A9560421BA806400ED9E7C /* Debug */,
+				56A9560521BA806400ED9E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56A9560621BA806400ED9E7C /* Build configuration list for PBXNativeTarget "NickelFoxDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A9560721BA806400ED9E7C /* Debug */,
+				56A9560821BA806400ED9E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56A9560921BA806400ED9E7C /* Build configuration list for PBXNativeTarget "NickelFoxDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A9560A21BA806400ED9E7C /* Debug */,
+				56A9560B21BA806400ED9E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56A9560C21BA806400ED9E7C /* Build configuration list for PBXNativeTarget "NickelFoxDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A9560D21BA806400ED9E7C /* Debug */,
+				56A9560E21BA806400ED9E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56A9567D21BA96F100ED9E7C /* Build configuration list for PBXNativeTarget "NickelFoxWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A9567E21BA96F100ED9E7C /* Debug */,
+				56A9567F21BA96F100ED9E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56A9568121BA96F100ED9E7C /* Build configuration list for PBXNativeTarget "NickelFoxWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A9568221BA96F100ED9E7C /* Debug */,
+				56A9568321BA96F100ED9E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56A955D621BA806200ED9E7C /* Project object */;
+}
