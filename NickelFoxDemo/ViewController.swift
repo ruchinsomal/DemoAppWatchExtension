@@ -7,17 +7,33 @@
 //
 
 import UIKit
+import CoreData
 import SafariServices
 
 class ViewController: UIViewController, SFSafariViewControllerDelegate, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tblArticle: UITableView!
-    var articleArr:[RSArticles] = []
+    var articleArr:[News] = []
+    lazy var coreDataStack = CoreDataStack.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tblArticle.tableFooterView = UIView(frame: CGRect.zero)
-        getdata()
+        reloadData()
+        if articleArr.count == 0 {
+            getdata()
+        }
+    }
+    
+    func reloadData() {
+        let fetchRequest = NSFetchRequest<News>(entityName: eNews)
+        do {
+            let records = try coreDataStack.mainManagedObjectContext.fetch(fetchRequest)
+                articleArr = records
+            self.tblArticle.reloadData()
+        } catch  {
+            fatalError("error")
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,7 +59,7 @@ class ViewController: UIViewController, SFSafariViewControllerDelegate, UITableV
         let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell", for: indexPath) as! ArticleCell
         cell.selectionStyle = .none
         cell.img.contentMode = .scaleAspectFit
-        let image = articleArr[indexPath.row].urlToImage ?? ""
+        let image = articleArr[indexPath.row].image ?? ""
         if image != "" {
             let imageUrl = URL(string: image)
             cell.img.sd_setImage(with: imageUrl, placeholderImage: UIImage(named: "placeholder"))
@@ -88,7 +104,7 @@ class ViewController: UIViewController, SFSafariViewControllerDelegate, UITableV
     func getdata()  {
         //let user_id = UserDefaults.standard.object(forKey: "user_id") as! String
         MyLoader.showLoadingView()
-        let params:[String: Any] = ["q":"bitcoin","from":"2018-11-07","sortBy":"publishedAt","apiKey":"42bec2a9d04d49bd90e07385d1e73b7f"]
+        let params:[String: Any] = ["q":"bitcoin","from":"2018-11-30","sortBy":"publishedAt","apiKey":"42bec2a9d04d49bd90e07385d1e73b7f"]
         getRequest(kNews_url, params: params as [String : AnyObject]?,oauth: true, result: {
             (response: JSON?, error: NSError?, statuscode: Int) in
             MyLoader.hideLoadingView()
@@ -98,21 +114,28 @@ class ViewController: UIViewController, SFSafariViewControllerDelegate, UITableV
                 }
                 return
             }
-            if response!["status"].stringValue == "fail" {
-                showAlertView(title: "Error", message: response!["reason"].stringValue, ref: self)
+            if response!["status"].stringValue == "error" {
+                showAlertView(title: "Error", message: response!["message"].stringValue, ref: self)
             } else {
                 if statuscode == 200 {
                     guard let responseObj = response else {
                         showAlertView(title: "Error", message: "Something went wrong. We are Working on it.", ref: self)
                         return
                     }
-                    let news = RSArticle.init(json: responseObj)
-                    guard let articles = news.articles else {
-                        showAlertView(title: "Error", message: "Something went wrong. We are Working on it.", ref: self)
-                        return
+                    let articles = responseObj["articles"].arrayValue
+                    guard let entity = NSEntityDescription.entity(forEntityName: eNews, in: self.coreDataStack.mainManagedObjectContext) else {
+                        fatalError("Could not find entity")
                     }
-                    self.articleArr = articles
-                    self.tblArticle.reloadData()
+                    
+                    for article in articles {
+                        let news = News(entity: entity, insertInto: self.coreDataStack.mainManagedObjectContext)
+                        news.author = article["author"].stringValue
+                        news.title = article["title"].stringValue
+                        news.image = article["urlToImage"].stringValue
+                        news.url = article["url"].stringValue
+                    }
+                    self.coreDataStack.saveContxt()
+                    self.reloadData()
                 } else {
                     showAlertView(title: "Error", message: "Something went wrong. We are Working on it.", ref: self)
                 }

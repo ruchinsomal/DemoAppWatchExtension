@@ -8,6 +8,10 @@
 
 import Foundation
 
+//CoreData Entity name
+let eNews = "News"
+let dataModelName = "NewsData"
+
 let kBaseURL = "https://newsapi.org/v2/"
 
 let kNews_url = kBaseURL + "everything"
