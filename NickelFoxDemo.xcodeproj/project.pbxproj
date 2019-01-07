@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		39E7D6635DBEBF8D7D83DC44 /* Pods_NickelFoxDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3DC35D38EA2BF84724A109 /* Pods_NickelFoxDemoTests.framework */; };
+		560EA84721E322D700C3679A /* DesignVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EA84621E322D700C3679A /* DesignVC.swift */; };
 		567A032E21DA3B30005255A4 /* NewsData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 567A032C21DA3B30005255A4 /* NewsData.xcdatamodeld */; };
 		567A035221DA4513005255A4 /* News+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A035021DA4513005255A4 /* News+CoreDataClass.swift */; };
 		567A035421DA4756005255A4 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A035321DA4756005255A4 /* CoreDataStack.swift */; };
 		567A035621DA4F41005255A4 /* News+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A035521DA4F40005255A4 /* News+CoreDataProperties.swift */; };
+		567A035A21DE547F005255A4 /* NewCustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A035921DE547F005255A4 /* NewCustomVC.swift */; };
 		56A955E221BA806200ED9E7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A955E121BA806200ED9E7C /* AppDelegate.swift */; };
 		56A955E421BA806200ED9E7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A955E321BA806200ED9E7C /* ViewController.swift */; };
 		56A955E721BA806200ED9E7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A955E521BA806200ED9E7C /* Main.storyboard */; };
@@ -114,10 +116,12 @@
 		0B3DC35D38EA2BF84724A109 /* Pods_NickelFoxDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NickelFoxDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		340DAAA1F9BC7D9AE8017F90 /* Pods-NickelFoxDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NickelFoxDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NickelFoxDemoTests/Pods-NickelFoxDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D35DAE1DB5548900DA0F020 /* Pods-NickelFoxDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NickelFoxDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NickelFoxDemoUITests/Pods-NickelFoxDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		560EA84621E322D700C3679A /* DesignVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignVC.swift; sourceTree = "<group>"; };
 		567A032D21DA3B30005255A4 /* NewsData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewsData.xcdatamodel; sourceTree = "<group>"; };
 		567A035021DA4513005255A4 /* News+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "News+CoreDataClass.swift"; sourceTree = "<group>"; };
 		567A035321DA4756005255A4 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		567A035521DA4F40005255A4 /* News+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "News+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		567A035921DE547F005255A4 /* NewCustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCustomVC.swift; sourceTree = "<group>"; };
 		56A955DE21BA806200ED9E7C /* NickelFoxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NickelFoxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A955E121BA806200ED9E7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56A955E321BA806200ED9E7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -275,6 +279,8 @@
 				567A035021DA4513005255A4 /* News+CoreDataClass.swift */,
 				567A035521DA4F40005255A4 /* News+CoreDataProperties.swift */,
 				567A035321DA4756005255A4 /* CoreDataStack.swift */,
+				567A035921DE547F005255A4 /* NewCustomVC.swift */,
+				560EA84621E322D700C3679A /* DesignVC.swift */,
 				567A032C21DA3B30005255A4 /* NewsData.xcdatamodeld */,
 				56A955E521BA806200ED9E7C /* Main.storyboard */,
 				56A955E821BA806300ED9E7C /* Assets.xcassets */,
@@ -674,6 +680,7 @@
 				56A9562921BA820400ED9E7C /* SDWebImageCompat.m in Sources */,
 				56A9562521BA820400ED9E7C /* SDWebImageDecoder.m in Sources */,
 				56A9563721BA837C00ED9E7C /* UIView+WebCacheOperation.m in Sources */,
+				567A035A21DE547F005255A4 /* NewCustomVC.swift in Sources */,
 				56A9564621BA83D600ED9E7C /* NSData+ImageContentType.m in Sources */,
 				56A9565121BA86AD00ED9E7C /* CommonObject.swift in Sources */,
 				56A9564821BA845C00ED9E7C /* AppUrls.swift in Sources */,
@@ -684,6 +691,7 @@
 				56A9564321BA83B100ED9E7C /* UIButton+WebCache.m in Sources */,
 				56A9562B21BA820400ED9E7C /* SDWebImagePrefetcher.m in Sources */,
 				56A9565321BA87FF00ED9E7C /* ArticleCell.swift in Sources */,
+				560EA84721E322D700C3679A /* DesignVC.swift in Sources */,
 				56A9561221BA811B00ED9E7C /* NetworkConfiguration.swift in Sources */,
 				56A9562E21BA821B00ED9E7C /* MyLoader.m in Sources */,
 				56A9563421BA833700ED9E7C /* UIImageView+HighlightedWebCache.m in Sources */,

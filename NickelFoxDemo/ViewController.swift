@@ -79,12 +79,27 @@ class ViewController: UIViewController, SFSafariViewControllerDelegate, UITableV
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         _ = tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+        // This function for Safari viewcontroller
         openURL(urlString: articleArr[indexPath.row].url ?? "")
+        // This view comtroller for video play in portrait and landscape mode
+//        moveVC()
+        // This view comtroller for dynamic leading and trailing contraint
+//        moveDesignVC()
+    }
+    
+    func moveVC() {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "NewCustomVC") as! NewCustomVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func moveDesignVC() {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "DesignVC") as! DesignVC
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func openURL(urlString: String) {
         guard let url = URL(string: urlString) else {
-            showAlertView(title: "Erroe", message: "Something went wrong. We are Working on it.", ref: self)
+            showAlertView(title: "Error", message: "Something went wrong. We are Working on it.", ref: self)
             return
         }
         let safariVC = SFSafariViewController(url: url)

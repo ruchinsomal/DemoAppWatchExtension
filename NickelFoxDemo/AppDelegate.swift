@@ -41,6 +41,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         CoreDataStack.sharedInstance.saveContxt()
     }
+    
+    var shouldRotate = true
+    private func application(application: UIApplication, supportedInterfaceOrientationsForWindow window: UIWindow?) -> Int {
+        if shouldRotate == true {
+            return Int(UIInterfaceOrientationMask.portrait.rawValue)
+        } else {
+            return Int(UIInterfaceOrientationMask.landscapeLeft.rawValue)
+        }
+    }
 
 
 }
